@@ -40,4 +40,5 @@ app.use('/comment', CommentRoute) // addComment with IsLogin middleware
 app.use('/public', publicRoute) // 
 
 
-app.listen(PORT, ()=> console.log(`SERVER IS LISTENING AT PORT: ${PORT} ...`))
+// app.listen(PORT, ()=> console.log(`SERVER IS LISTENING AT PORT: ${PORT} ...`))
+module.exports = app;
