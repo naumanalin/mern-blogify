@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+require('dotenv').config();
 const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors');
@@ -10,8 +11,8 @@ const DashRoute = require('./routes/Dashboard.js');
 const CommentRoute = require('./routes/Comments.js');
 const publicRoute = require('./routes/PublicRoute.js');
 
+
 // dotenv
-require('dotenv').config();
 const PORT = process.env.PORT || 8001;
 
 // Mongoose
